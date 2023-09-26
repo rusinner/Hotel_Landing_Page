@@ -6,14 +6,26 @@
   @apply z-10 flex-col max-w-full px-2 py-2;
 }
 
+.hero-main {
+  @apply w-full flex flex-col items-center gap-4 sm:gap-0 sm:pt-0 pt-2;
+}
+
 .hero-section {
-  @apply relative flex flex-col justify-center w-full h-[98vh] bg-hero-bg-mobile sm:bg-hero-bg-desktop bg-cover bg-center before:absolute before:block before:w-full before:h-[98vh] before:bg-black before:opacity-25;
+  @apply relative w-full sm:h-[98vh] h-[88vh] flex flex-col justify-center bg-cover bg-bottom bg-hero-bg-mobile sm:bg-hero-bg-desktop before:absolute before:block before:w-full sm:before:h-[98vh] before:h-[88vh] before:bg-black before:opacity-25;
 }
 
 .welcome-title {
-  @apply relative flex flex-col items-center justify-center text-white gap-[32px] z-10;
+  @apply relative sm:flex hidden flex-col items-center justify-center text-white gap-[32px] z-10;
 }
 
 .hero-logo {
-  @apply bg-white w-[150px] h-[116px] pt-4 px-4 flex mx-auto z-10 absolute bottom-0 left-0 right-0;
+  @apply bg-white sm:w-[150px] w-[131px] sm:h-[116px] h-[108px] pt-4 px-4 flex mx-auto z-10 absolute bottom-0 left-0 right-0;
+}
+
+.book-button {
+  @apply relative sm:absolute inline-flex justify-center sm:top-[37px] sm:right-[38px] w-fit px-10 py-4 z-10 bg-[#CA6D3C] text-white border-[1px] border-[#CA6D3C]  text-[12px] leading-[16px] uppercase;
+}
+
+.book-button-wrapper {
+  @apply flex bg-white justify-center px-6 sm:before:hidden before:place-self-center before:items-center before:border-b-[1px] before:border-[#CA6D3C] before:absolute before:inset-x-4 before:z-[-10];
 }

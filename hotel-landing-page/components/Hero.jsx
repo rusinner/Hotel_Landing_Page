@@ -5,8 +5,9 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div>
+    <div className="hero-main">
       <BookButton onClick={() => console.log("Click")} text="BOOK YOUR STAY" />
+
       <div className="hero-section">
         <WelcomeText
           title="Grand opening"
