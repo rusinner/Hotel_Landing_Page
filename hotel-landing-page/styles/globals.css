@@ -5,3 +5,15 @@
 .app {
   @apply z-10 flex-col max-w-full px-2 py-2;
 }
+
+.hero-section {
+  @apply relative flex flex-col justify-center w-full h-[98vh] bg-hero-bg-mobile sm:bg-hero-bg-desktop bg-cover bg-center before:absolute before:block before:w-full before:h-[98vh] before:bg-black before:opacity-25;
+}
+
+.welcome-title {
+  @apply relative flex flex-col items-center justify-center text-white gap-[32px] z-10;
+}
+
+.hero-logo {
+  @apply bg-white w-[150px] h-[116px] pt-4 px-4 flex mx-auto z-10 absolute bottom-0 left-0 right-0;
+}
