@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.app {
-  @apply z-10 flex-col max-w-full px-2 py-2;
+/* variables */
+:root {
+  --main-white-color: #ffffff;
+  --secondary-white-color: #fcf8f5;
+  --main-orange-color: #ca6d3c;
+  --secondary-orange-color: #ecbba3;
 }
 
+.app {
+  @apply z-10 flex flex-col max-w-full sm:px-2 px-4 py-2;
+}
+
+/* hero section */
 .hero-main {
   @apply w-full flex flex-col items-center gap-4 sm:gap-0 sm:pt-0 pt-2;
 }
@@ -15,17 +24,57 @@
 }
 
 .welcome-title {
-  @apply relative sm:flex hidden flex-col items-center justify-center text-white gap-[32px] z-10;
+  @apply relative sm:flex hidden flex-col items-center justify-center text-[var(--main-white-color)] gap-[32px] z-10;
 }
 
 .hero-logo {
-  @apply bg-white sm:w-[150px] w-[131px] sm:h-[116px] h-[108px] pt-4 px-4 flex mx-auto z-10 absolute bottom-0 left-0 right-0;
+  @apply bg-[var(--main-white-color)] sm:w-[150px] w-[131px] sm:h-[116px] h-[108px] pt-4 px-4 flex mx-auto z-10 absolute bottom-0 left-0 right-0;
 }
 
 .book-button {
-  @apply relative sm:absolute inline-flex justify-center sm:top-[37px] sm:right-[38px] w-fit px-10 py-4 z-10 bg-[#CA6D3C] text-white border-[1px] border-[#CA6D3C]  text-[12px] leading-[16px] uppercase;
+  @apply relative sm:absolute inline-flex justify-center sm:top-[37px] sm:right-[38px] w-fit px-10 py-4 z-10 bg-[var(--main-orange-color)] text-[var(--main-white-color)] border-[1px] border-[var(--main-orange-color)]  text-[12px] leading-[16px] uppercase;
 }
 
 .book-button-wrapper {
-  @apply flex bg-white justify-center px-6 sm:before:hidden before:place-self-center before:items-center before:border-b-[1px] before:border-[#CA6D3C] before:absolute before:inset-x-4 before:z-[-10];
+  @apply flex bg-[var(--main-white-color)] justify-center px-6 sm:before:hidden before:place-self-center before:items-center before:border-b-[1px] before:border-[var(--secondary-orange-color)] before:absolute before:inset-x-4 before:z-[-10];
+}
+
+/* welcome section */
+
+.welcome-main {
+  @apply relative w-full h-screen grid sm:grid-cols-2 grid-cols-1 sm:px-32 sm:py-20 mt-8 px-0 py-0;
+}
+
+.welcome-photo-wrapper {
+  @apply relative flex items-start w-[90%] sm:w-full bg-white sm:bg-transparent sm:border-r-transparent border-r-white sm:border-r-0 border-r-[18px];
+}
+/* bg-[var(--main-white-color)] */
+.welcome-text-wrapper {
+  @apply flex flex-col items-start justify-center border-[#ECBBA3] border-[1px] sm:ml-[-98px] ml-0 sm:mt-0 mt-[-4rem] sm:py-40 lg:py-36 xl:py-24 sm:px-48 lg:px-44 xl:px-24 py-0 px-0;
+}
+
+.paragraph-wrapper {
+  @apply relative flex flex-col gap-8 sm:ml-10 items-start text-sm leading-7 px-4;
+}
+
+/* new era section */
+
+.new-era-main {
+  @apply relative w-full h-screen flex flex-col-reverse justify-start items-center gap-10 sm:grid sm:grid-cols-8 grid-cols-1 sm:px-32 sm:py-32 mt-8 px-0 py-0;
+}
+
+.new-era-text-wrapper {
+  @apply flex flex-col flex-wrap justify-center items-start gap-16 col-span-2;
+}
+
+.new-wra-paragraph-wrapper {
+  @apply flex justify-center text-sm leading-7 border-black border-2;
+}
+
+.new-era-image-wrapper {
+  @apply flex justify-center items-center col-start-4 col-span-4 sm:ml-10 ml-0 border-black;
+}
+
+.rotated-square {
+  @apply sm:absolute relative sm:w-[30vw] w-[50vw] place-self-center justify-center aspect-square border-slate-700 border-2 rotate-45 sm:mb-0 mb-10;
 }

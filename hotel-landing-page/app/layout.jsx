@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <main className="app">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

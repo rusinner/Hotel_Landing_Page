@@ -8,12 +8,11 @@ const montserrat = Montserrat({
 
 const Home = () => {
   return (
-    <div className={`${montserrat.variable}`}>
+    <div className={`${montserrat.variable} app`}>
       <Hero />
       <Welcome />
       <NewEra />
       <OpeningBanner />
-      <Welcome />
     </div>
   );
 };
