@@ -22,7 +22,29 @@ const NewEra = () => {
         </div>
       </div>
       <div className="new-era-image-wrapper">
-        <div className="rotated-square"></div>
+        <div className="flex justify-center flex-col">
+          <Image
+            src="/assets/images/NewEraImage1.png"
+            width={342}
+            height={512}
+            quality={100}
+          />
+        </div>
+        <div className="flex flex-col items-start">
+          <Image
+            src="/assets/images/NewEraImage2.png"
+            width={464}
+            height={348}
+            quality={100}
+          />
+          <Image
+            src="/assets/images/NewEraImage3.png"
+            width={586}
+            height={392}
+            quality={100}
+          />
+          <div className="rotated-square"></div>
+        </div>
       </div>
     </div>
   );

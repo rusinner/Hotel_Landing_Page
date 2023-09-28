@@ -11,7 +11,7 @@
 }
 
 .app {
-  @apply z-10 flex flex-col max-w-full sm:px-2 px-4 py-2;
+  @apply absolute z-0 flex flex-col max-w-full sm:px-2 px-4 py-2 bg-[var(--secondary-white-color)];
 }
 
 /* hero section */
@@ -24,7 +24,7 @@
 }
 
 .welcome-title {
-  @apply relative sm:flex hidden flex-col items-center justify-center text-[var(--main-white-color)] gap-[32px] z-10;
+  @apply relative sm:flex hidden flex-col items-center justify-center  gap-[32px] z-10;
 }
 
 .hero-logo {
@@ -46,35 +46,61 @@
 }
 
 .welcome-photo-wrapper {
-  @apply relative flex items-start w-[90%] sm:w-full bg-white sm:bg-transparent sm:border-r-transparent border-r-white sm:border-r-0 border-r-[18px];
+  @apply relative flex items-start w-[90%] sm:w-full bg-[var(--secondary-white-color)] sm:bg-transparent sm:ml-0 ml-[-8px];
 }
 /* bg-[var(--main-white-color)] */
 .welcome-text-wrapper {
-  @apply flex flex-col items-start justify-center border-[#ECBBA3] border-[1px] sm:ml-[-98px] ml-0 sm:mt-0 mt-[-4rem] sm:py-40 lg:py-36 xl:py-24 sm:px-48 lg:px-44 xl:px-24 py-0 px-0;
+  @apply flex flex-col items-start justify-center border-[#ECBBA3] border-[1px] sm:ml-[-98px] ml-0 sm:mt-0 mt-[-4rem] sm:py-40 lg:py-36 xl:py-24 sm:px-48 lg:px-24 xl:px-24 py-0 px-0;
 }
 
 .paragraph-wrapper {
-  @apply relative flex flex-col gap-8 sm:ml-10 items-start text-sm leading-7 px-4;
+  @apply relative flex flex-col gap-8 sm:ml-28 ml-4 items-start  leading-7 text-sm w-[300px] aspect-square;
 }
 
 /* new era section */
 
 .new-era-main {
-  @apply relative w-full h-screen flex flex-col-reverse justify-start items-center gap-10 sm:grid sm:grid-cols-8 grid-cols-1 sm:px-32 sm:py-32 mt-8 px-0 py-0;
+  @apply relative w-full h-screen flex sm:flex-row flex-col-reverse justify-start items-center sm:px-32 px-0;
 }
 
 .new-era-text-wrapper {
-  @apply flex flex-col flex-wrap justify-center items-start gap-16 col-span-2;
+  @apply flex flex-col flex-wrap basis-1/4 gap-8 justify-center items-start;
 }
 
 .new-wra-paragraph-wrapper {
-  @apply flex justify-center text-sm leading-7 border-black border-2;
+  @apply flex  justify-center text-sm leading-7 border-black border-2;
 }
 
 .new-era-image-wrapper {
-  @apply flex justify-center items-center col-start-4 col-span-4 sm:ml-10 ml-0 border-black;
+  @apply flex basis-3/4 h-[70%] sm:ml-10 ml-0 border-black border-2;
 }
 
 .rotated-square {
-  @apply sm:absolute relative sm:w-[30vw] w-[50vw] place-self-center justify-center aspect-square border-slate-700 border-2 rotate-45 sm:mb-0 mb-10;
+  @apply absolute sm:w-[400px] w-[80%] aspect-square border-slate-700 border-2 rotate-45  z-[-1];
+}
+
+/* opening banner */
+.opening-banner-wrapper {
+  @apply w-full py-20 px-12 relative flex flex-col gap-[32px] z-10 text-center items-stretch;
+}
+
+.opening-banner-heading {
+  @apply text-[#3D4244] text-[40px] sm:text-[64px] sm:leading-[68px] leading-[48px];
+}
+.opening-banner-paragraph {
+  @apply text-[#58646A] px-4 text-[14px] leading-[28px];
+}
+
+/* book your stay section */
+
+.book-your-stay-wrapper {
+  @apply w-full flex flex-col items-center gap-4 sm:gap-0 sm:pt-0 pt-2 py-20;
+}
+
+.book-button-wrapper-footer {
+  @apply flex bg-[var(--secondary-white-color)] justify-center px-6 before:place-self-center before:items-center before:border-b-[1px] before:border-[var(--secondary-orange-color)] before:absolute before:inset-x-4 before:z-[-10];
+}
+
+.book-button-footer {
+  @apply relative inline-flex justify-center  w-fit px-10 py-4 z-10 bg-[var(--main-orange-color)] text-[var(--secondary-white-color)] border-[1px] border-[var(--main-orange-color)]  text-[12px] leading-[16px] uppercase;
 }

@@ -1,5 +1,11 @@
 import { Montserrat } from "next/font/google";
-import { Hero, NewEra, OpeningBanner, Welcome } from "@components";
+import {
+  BookYourStay,
+  Hero,
+  NewEra,
+  OpeningBanner,
+  Welcome,
+} from "@components";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -13,6 +19,7 @@ const Home = () => {
       <Welcome />
       <NewEra />
       <OpeningBanner />
+      <BookYourStay />
     </div>
   );
 };

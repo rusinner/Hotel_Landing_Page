@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero-main">
       <BookButton onClick={() => console.log("Click")} text="BOOK YOUR STAY" />
 
-      <div className="hero-section">
+      <div className="hero-section text-[#ffffff]">
         <WelcomeText
           title="Grand opening"
           subtitle="We are in great anticipation of the moment when our doors open to welcome you."

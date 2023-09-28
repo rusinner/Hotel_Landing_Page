@@ -14,7 +14,7 @@ const Welcome = () => {
       </div>
       <div className="welcome-text-wrapper">
         <div className="paragraph-wrapper">
-          <h1 className="text-4xl leading-10 ">Welcome</h1>
+          <h1 className="text-4xl leading-10">Welcome</h1>
           <p>
             The new and exciting version of MINOIS luxury boutique hotel on
             Paros island, embodies Mediterranean aura in its entire spectrum and
