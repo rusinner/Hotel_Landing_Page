@@ -5,7 +5,7 @@ const NewEra = () => {
     <div className="new-era-main">
       <div className="new-era-text-wrapper">
         <h1 className="text-4xl leading-10 ">MINOIS enters a new era…</h1>
-        <div className="new-wra-paragraph-wrapper">
+        <div className="new-era-paragraph-wrapper">
           <p>
             Drawing inspiration from all the countries of the Mediterranean
             basin, MINOIS tells a riveting story of harmonious contrasts.The
@@ -22,26 +22,31 @@ const NewEra = () => {
         </div>
       </div>
       <div className="new-era-image-wrapper">
-        <div className="flex justify-center flex-col">
+        <div className="flex justify-center flex-col pt-36">
           <Image
             src="/assets/images/NewEraImage1.png"
             width={342}
             height={512}
             quality={100}
+            alt="Pool"
           />
         </div>
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start pt-36 items-arround">
           <Image
+            className="ml-[-8px] mt-4"
             src="/assets/images/NewEraImage2.png"
             width={464}
             height={348}
             quality={100}
+            alt="Hotel Lobby"
           />
           <Image
+            className="mt-[-4]"
             src="/assets/images/NewEraImage3.png"
             width={586}
             height={392}
             quality={100}
+            alt="Hottel lobby"
           />
           <div className="rotated-square"></div>
         </div>
